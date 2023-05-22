@@ -1,0 +1,25 @@
+#from util import if_else
+#from Compiler import types
+program.set_bit_length(128)
+
+program.use_split(3)
+#program.use_edabit(True)
+
+a = sint.Array(10000)
+#a=sint.Matrix(10000,1)
+
+a.input_from(0)
+
+b = sint.Array(10000)
+#b=sint.Matrix(10000,1)
+
+b.input_from(1)
+#c = sint.Array(4)
+#c.input_from(2)
+#res = sint.Array(2)
+#res=sint.Matrix(4,1)
+#res.assign(a.mul_trans())
+res = a[:] > b[:]
+#print("%s",res.reveal())
+print_ln("%s",res.reveal())
+

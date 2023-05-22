@@ -1,0 +1,14 @@
+from util import if_else
+from Compiler import types
+
+a = sint.Array(4)
+a.input_from(0)
+b = sint.Array(4)
+b.input_from(1)
+#c = sint.Array(4)
+#c.input_from(2)
+res = sint.Array(4)
+res = a[:] + b[:]
+#print("%s",res.reveal())
+print_str("%s",res.reveal())
+
